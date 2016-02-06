@@ -14,8 +14,6 @@ namespace MemoryAPI
     public class memoryDB : IdentityDbContext<IdentityUser>
     {
         public DbSet<User> User { get; set; }
-        public DbSet<Memory> Memory { get; set; }
-        public DbSet<Vacation> Vacation { get; set; }
         public DbSet<Media> Media { get; set; }
         public DbSet<VideoMedia> Video { get; set; }
         public DbSet<PictureMedia> Picture { get; set; }
@@ -28,5 +26,5 @@ namespace MemoryAPI
         }
     }
 
-    
+
 }

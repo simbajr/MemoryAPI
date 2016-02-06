@@ -11,15 +11,18 @@ namespace MemoryAPI
     {
         public static void Register(HttpConfiguration config)
         {
-            config.MapHttpAttributesRoutes();
+            config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}/{modifier}/{id2}",
-                defaults: new { id = RouteParameter.Optional, 
-                id2 = RouteParameter.Optional,
-                modifier= RouteParameter.Optional}
-                
+                routeTemplate: "api/{namepsace}/{controller}/{id}/{modifier}/{id2}",
+                defaults: new
+                {
+                    id = RouteParameter.Optional,
+                    id2 = RouteParameter.Optional,
+                    modifier = RouteParameter.Optional
+                }
+
             );
 
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();

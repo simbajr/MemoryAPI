@@ -21,7 +21,7 @@ namespace MemoryAPI
             _userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(_ctx));
         }
 
-        public async Task<IdentityResult> RegisterUser( Account userModel )
+        public async Task<IdentityResult> RegisterUser(Account userModel)
         {
             IdentityUser user = new IdentityUser
             {
