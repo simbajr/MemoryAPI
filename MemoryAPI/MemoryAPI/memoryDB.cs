@@ -24,6 +24,12 @@ namespace MemoryAPI
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<User>().HasMany(u => u.friendList).WithMany();
         }
+
+        public memoryDB()
+            : base("memoryDB")
+        {
+
+        }
     }
 
 

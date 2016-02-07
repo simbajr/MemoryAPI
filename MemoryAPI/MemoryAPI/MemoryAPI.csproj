@@ -124,9 +124,7 @@
     <Compile Include="AuthRepository.cs" />
     <Compile Include="Controllers\v1\accountController.cs" />
     <Compile Include="Controllers\v1\mediaController.cs" />
-    <Compile Include="Controllers\v1\memoryController.cs" />
     <Compile Include="Controllers\v1\userController.cs" />
-    <Compile Include="Controllers\v1\vacationController.cs" />
     <Compile Include="memoryDB.cs" />
     <Compile Include="Models\AccessTokenRequest.cs" />
     <Compile Include="Models\AccessTokenRespone.cs" />

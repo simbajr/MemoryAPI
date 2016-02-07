@@ -23,14 +23,27 @@ namespace MemoryAPI
 
         public async Task<IdentityResult> RegisterUser(Account userModel)
         {
-            IdentityUser user = new IdentityUser
+            /* IdentityUser user = new IdentityUser
+             {
+                 UserName = userModel.username
+             };
+
+             var result = await _userManager.CreateAsync(user, userModel.password);
+
+             return result;*/
+
+            using (var db = new memoryDB())
             {
-                UserName = userModel.username
-            };
+                IdentityUser user = new IdentityUser
+                {
+                    UserName = userModel.username,
+                    Email = userModel.email
+                };
 
-            var result = await _userManager.CreateAsync(user, userModel.password);
+                var result = await _userManager.CreateAsync(user, userModel.password);
 
-            return result;
+                return result;
+            }
         }
 
         public async Task<IdentityUser> FindUser(string userName, string password)
