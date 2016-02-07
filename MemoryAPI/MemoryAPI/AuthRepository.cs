@@ -13,13 +13,13 @@ namespace MemoryAPI
 {
     public class AuthRepository : IDisposable
     {
-        private memoryDB _ctx;
+        private MemoryDB _ctx;
 
         private UserManager<IdentityUser> _userManager;
 
         public AuthRepository()
         {
-            _ctx = new memoryDB();
+            _ctx = new MemoryDB();
             _userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(_ctx));
         }
 
@@ -30,7 +30,7 @@ namespace MemoryAPI
                 UserName = userModel.username
             };
 
-            using (var db = new memoryDB())
+            using (var db = new MemoryDB())
             {
                 User newUser = new User();
                 List<Media> mediaList = new List<Media>();
