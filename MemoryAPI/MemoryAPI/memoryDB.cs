@@ -9,6 +9,7 @@ using MemoryAPI.Models;
 
 
 
+//skapad av Simba
 namespace MemoryAPI
 {
     public class memoryDB : IdentityDbContext<IdentityUser>

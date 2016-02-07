@@ -10,14 +10,12 @@ using System.Web.Http;
 
 
 
-
+//skapad av Simba
 namespace MemoryAPI.Controllers.v1
 {
 
     public class accountController : ApiController
     {
-
-
         private AuthRepository _repo = null;
 
         public accountController()

@@ -112,11 +112,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System.Web.Http.WebHost">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -124,9 +119,7 @@
     <Compile Include="AuthRepository.cs" />
     <Compile Include="Controllers\v1\accountController.cs" />
     <Compile Include="Controllers\v1\mediaController.cs" />
-    <Compile Include="Controllers\v1\memoryController.cs" />
     <Compile Include="Controllers\v1\userController.cs" />
-    <Compile Include="Controllers\v1\vacationController.cs" />
     <Compile Include="memoryDB.cs" />
     <Compile Include="Models\AccessTokenRequest.cs" />
     <Compile Include="Models\AccessTokenRespone.cs" />
@@ -152,6 +145,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

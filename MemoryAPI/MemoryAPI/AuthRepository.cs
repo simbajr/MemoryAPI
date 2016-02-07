@@ -7,6 +7,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 
+
+//skapad av Simba
 namespace MemoryAPI
 {
     public class AuthRepository : IDisposable
@@ -22,28 +24,27 @@ namespace MemoryAPI
         }
 
         public async Task<IdentityResult> RegisterUser(Account userModel)
-        {
-            /* IdentityUser user = new IdentityUser
-             {
-                 UserName = userModel.username
-             };
-
-             var result = await _userManager.CreateAsync(user, userModel.password);
-
-             return result;*/
+        {          
+            IdentityUser user = new IdentityUser
+            {
+                UserName = userModel.username
+            };
 
             using (var db = new memoryDB())
             {
-                IdentityUser user = new IdentityUser
-                {
-                    UserName = userModel.username,
-                    Email = userModel.email
-                };
+                User newUser = new User();
+                List<Media> mediaList = new List<Media>();
+                List<User> friendList = new List<User>();
+                newUser.friendList = friendList;
+                newUser.mediaList = mediaList;
 
-                var result = await _userManager.CreateAsync(user, userModel.password);
-
-                return result;
+                db.User.Add(newUser);
+                db.SaveChanges();
             }
+
+            var result = await _userManager.CreateAsync(user, userModel.password);
+
+            return result;
         }
 
         public async Task<IdentityUser> FindUser(string userName, string password)

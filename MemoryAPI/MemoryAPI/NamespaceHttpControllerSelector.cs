@@ -11,7 +11,7 @@ using System.Web.Http.Controllers;
 using System.Web.Http.Dispatcher;
 using System.Web.Http.Routing;
 
-namespace MemoryAPI
+namespace MyMemories
 {
     public class NamespaceHttpControllerSelector : IHttpControllerSelector
     {
