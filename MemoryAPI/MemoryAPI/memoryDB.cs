@@ -11,7 +11,7 @@ using MemoryAPI.Models;
 
 namespace MemoryAPI
 {
-    public class memoryDB : IdentityDbContext<IdentityUser>
+    public class MemoryDB : IdentityDbContext<IdentityUser>
     {
         public DbSet<User> User { get; set; }
         public DbSet<Media> Media { get; set; }
@@ -25,7 +25,7 @@ namespace MemoryAPI
             modelBuilder.Entity<User>().HasMany(u => u.friendList).WithMany();
         }
 
-        public memoryDB()
+        public MemoryDB()
             : base("memoryDB")
         {
 

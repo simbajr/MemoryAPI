@@ -11,13 +11,13 @@ namespace MemoryAPI
 {
     public class AuthRepository : IDisposable
     {
-        private memoryDB _ctx;
+        private MemoryDB _ctx;
 
         private UserManager<IdentityUser> _userManager;
 
         public AuthRepository()
         {
-            _ctx = new memoryDB();
+            _ctx = new MemoryDB();
             _userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(_ctx));
         }
 
@@ -32,7 +32,7 @@ namespace MemoryAPI
 
              return result;*/
 
-            using (var db = new memoryDB())
+            using (var db = new MemoryDB())
             {
                 IdentityUser user = new IdentityUser
                 {
