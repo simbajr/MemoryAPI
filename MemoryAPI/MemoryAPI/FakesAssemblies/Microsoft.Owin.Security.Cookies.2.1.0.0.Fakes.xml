@@ -1,0 +1,605 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Owin.Security.Cookies.2.1.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieApplyRedirectContext">
+            <summary>Shim type of Microsoft.Owin.Security.Cookies.CookieApplyRedirectContext</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieApplyRedirectContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieApplyRedirectContext.#ctor(Microsoft.Owin.Security.Cookies.CookieApplyRedirectContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieApplyRedirectContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieApplyRedirectContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieApplyRedirectContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieApplyRedirectContext.ConstructorIOwinContextCookieAuthenticationOptionsString">
+            <summary>Sets the shim of CookieApplyRedirectContext.CookieApplyRedirectContext(IOwinContext context, CookieAuthenticationOptions options, String redirectUri)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieApplyRedirectContext.RedirectUriGet">
+            <summary>Sets the shim of CookieApplyRedirectContext.get_RedirectUri()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieApplyRedirectContext.RedirectUriSetString">
+            <summary>Sets the shim of CookieApplyRedirectContext.set_RedirectUri(String value)</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieApplyRedirectContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieApplyRedirectContext.AllInstances.RedirectUriGet">
+            <summary>Sets the shim of CookieApplyRedirectContext.get_RedirectUri()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieApplyRedirectContext.AllInstances.RedirectUriSetString">
+            <summary>Sets the shim of CookieApplyRedirectContext.set_RedirectUri(String value)</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationDefaults">
+            <summary>Shim type of Microsoft.Owin.Security.Cookies.CookieAuthenticationDefaults</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationDefaults.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationDefaults.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationDefaults.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationDefaults.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationDefaults.StaticConstructor">
+            <summary>Sets the shim of CookieAuthenticationDefaults.CookieAuthenticationDefaults()</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions">
+            <summary>Shim type of Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.#ctor(Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.Constructor">
+            <summary>Sets the shim of CookieAuthenticationOptions.CookieAuthenticationOptions()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.CookieDomainGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_CookieDomain()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.CookieDomainSetString">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_CookieDomain(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.CookieHttpOnlyGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_CookieHttpOnly()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.CookieHttpOnlySetBoolean">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_CookieHttpOnly(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.CookieNameGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_CookieName()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.CookieNameSetString">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_CookieName(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.CookiePathGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_CookiePath()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.CookiePathSetString">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_CookiePath(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.CookieSecureGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_CookieSecure()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.CookieSecureSetCookieSecureOption">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_CookieSecure(CookieSecureOption value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.ExpireTimeSpanGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_ExpireTimeSpan()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.ExpireTimeSpanSetTimeSpan">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_ExpireTimeSpan(TimeSpan value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.LoginPathGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_LoginPath()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.LoginPathSetPathString">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_LoginPath(PathString value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.LogoutPathGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_LogoutPath()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.LogoutPathSetPathString">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_LogoutPath(PathString value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.ProviderGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_Provider()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.ProviderSetICookieAuthenticationProvider">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_Provider(ICookieAuthenticationProvider value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.ReturnUrlParameterGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_ReturnUrlParameter()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.ReturnUrlParameterSetString">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_ReturnUrlParameter(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.SlidingExpirationGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_SlidingExpiration()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.SlidingExpirationSetBoolean">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_SlidingExpiration(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.SystemClockGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_SystemClock()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.SystemClockSetISystemClock">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_SystemClock(ISystemClock value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.TicketDataFormatGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_TicketDataFormat()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.TicketDataFormatSetISecureDataFormatOfAuthenticationTicket">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_TicketDataFormat(ISecureDataFormat`1&lt;AuthenticationTicket&gt; value)</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.CookieDomainGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_CookieDomain()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.CookieDomainSetString">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_CookieDomain(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.CookieHttpOnlyGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_CookieHttpOnly()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.CookieHttpOnlySetBoolean">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_CookieHttpOnly(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.CookieNameGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_CookieName()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.CookieNameSetString">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_CookieName(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.CookiePathGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_CookiePath()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.CookiePathSetString">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_CookiePath(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.CookieSecureGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_CookieSecure()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.CookieSecureSetCookieSecureOption">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_CookieSecure(CookieSecureOption value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.ExpireTimeSpanGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_ExpireTimeSpan()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.ExpireTimeSpanSetTimeSpan">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_ExpireTimeSpan(TimeSpan value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.LoginPathGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_LoginPath()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.LoginPathSetPathString">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_LoginPath(PathString value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.LogoutPathGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_LogoutPath()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.LogoutPathSetPathString">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_LogoutPath(PathString value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.ProviderGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_Provider()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.ProviderSetICookieAuthenticationProvider">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_Provider(ICookieAuthenticationProvider value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.ReturnUrlParameterGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_ReturnUrlParameter()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.ReturnUrlParameterSetString">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_ReturnUrlParameter(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.SlidingExpirationGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_SlidingExpiration()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.SlidingExpirationSetBoolean">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_SlidingExpiration(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.SystemClockGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_SystemClock()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.SystemClockSetISystemClock">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_SystemClock(ISystemClock value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.TicketDataFormatGet">
+            <summary>Sets the shim of CookieAuthenticationOptions.get_TicketDataFormat()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationOptions.AllInstances.TicketDataFormatSetISecureDataFormatOfAuthenticationTicket">
+            <summary>Sets the shim of CookieAuthenticationOptions.set_TicketDataFormat(ISecureDataFormat`1&lt;AuthenticationTicket&gt; value)</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider">
+            <summary>Shim type of Microsoft.Owin.Security.Cookies.CookieAuthenticationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.#ctor(Microsoft.Owin.Security.Cookies.CookieAuthenticationProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.Bind(Microsoft.Owin.Security.Cookies.ICookieAuthenticationProvider)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.ApplyRedirectCookieApplyRedirectContext">
+            <summary>Sets the shim of CookieAuthenticationProvider.ApplyRedirect(CookieApplyRedirectContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.Constructor">
+            <summary>Sets the shim of CookieAuthenticationProvider.CookieAuthenticationProvider()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.OnApplyRedirectGet">
+            <summary>Sets the shim of CookieAuthenticationProvider.get_OnApplyRedirect()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.OnApplyRedirectSetActionOfCookieApplyRedirectContext">
+            <summary>Sets the shim of CookieAuthenticationProvider.set_OnApplyRedirect(Action`1&lt;CookieApplyRedirectContext&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.OnResponseSignInGet">
+            <summary>Sets the shim of CookieAuthenticationProvider.get_OnResponseSignIn()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.OnResponseSignInSetActionOfCookieResponseSignInContext">
+            <summary>Sets the shim of CookieAuthenticationProvider.set_OnResponseSignIn(Action`1&lt;CookieResponseSignInContext&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.OnValidateIdentityGet">
+            <summary>Sets the shim of CookieAuthenticationProvider.get_OnValidateIdentity()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.OnValidateIdentitySetFuncOfCookieValidateIdentityContextTask">
+            <summary>Sets the shim of CookieAuthenticationProvider.set_OnValidateIdentity(Func`2&lt;CookieValidateIdentityContext,Task&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.ResponseSignInCookieResponseSignInContext">
+            <summary>Sets the shim of CookieAuthenticationProvider.ResponseSignIn(CookieResponseSignInContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.ValidateIdentityCookieValidateIdentityContext">
+            <summary>Sets the shim of CookieAuthenticationProvider.ValidateIdentity(CookieValidateIdentityContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider._ctorb__0CookieValidateIdentityContext">
+            <summary>Sets the shim of CookieAuthenticationProvider.&lt;.ctor&gt;b__0(CookieValidateIdentityContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider._ctorb__1CookieResponseSignInContext">
+            <summary>Sets the shim of CookieAuthenticationProvider.&lt;.ctor&gt;b__1(CookieResponseSignInContext context)</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.AllInstances.ApplyRedirectCookieApplyRedirectContext">
+            <summary>Sets the shim of CookieAuthenticationProvider.ApplyRedirect(CookieApplyRedirectContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.AllInstances.OnApplyRedirectGet">
+            <summary>Sets the shim of CookieAuthenticationProvider.get_OnApplyRedirect()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.AllInstances.OnApplyRedirectSetActionOfCookieApplyRedirectContext">
+            <summary>Sets the shim of CookieAuthenticationProvider.set_OnApplyRedirect(Action`1&lt;CookieApplyRedirectContext&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.AllInstances.OnResponseSignInGet">
+            <summary>Sets the shim of CookieAuthenticationProvider.get_OnResponseSignIn()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.AllInstances.OnResponseSignInSetActionOfCookieResponseSignInContext">
+            <summary>Sets the shim of CookieAuthenticationProvider.set_OnResponseSignIn(Action`1&lt;CookieResponseSignInContext&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.AllInstances.OnValidateIdentityGet">
+            <summary>Sets the shim of CookieAuthenticationProvider.get_OnValidateIdentity()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.AllInstances.OnValidateIdentitySetFuncOfCookieValidateIdentityContextTask">
+            <summary>Sets the shim of CookieAuthenticationProvider.set_OnValidateIdentity(Func`2&lt;CookieValidateIdentityContext,Task&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.AllInstances.ResponseSignInCookieResponseSignInContext">
+            <summary>Sets the shim of CookieAuthenticationProvider.ResponseSignIn(CookieResponseSignInContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieAuthenticationProvider.AllInstances.ValidateIdentityCookieValidateIdentityContext">
+            <summary>Sets the shim of CookieAuthenticationProvider.ValidateIdentity(CookieValidateIdentityContext context)</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext">
+            <summary>Shim type of Microsoft.Owin.Security.Cookies.CookieResponseSignInContext</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.#ctor(Microsoft.Owin.Security.Cookies.CookieResponseSignInContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.AuthenticationTypeGet">
+            <summary>Sets the shim of CookieResponseSignInContext.get_AuthenticationType()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.AuthenticationTypeSetString">
+            <summary>Sets the shim of CookieResponseSignInContext.set_AuthenticationType(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.ConstructorIOwinContextCookieAuthenticationOptionsStringClaimsIdentityAuthenticationProperties">
+            <summary>Sets the shim of CookieResponseSignInContext.CookieResponseSignInContext(IOwinContext context, CookieAuthenticationOptions options, String authenticationType, ClaimsIdentity identity, AuthenticationProperties properties)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.ConstructorIOwinRequestIOwinResponseStringClaimsIdentityAuthenticationProperties">
+            <summary>Sets the shim of CookieResponseSignInContext.CookieResponseSignInContext(IOwinRequest request, IOwinResponse response, String authenticationType, ClaimsIdentity identity, AuthenticationProperties properties)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.IdentityGet">
+            <summary>Sets the shim of CookieResponseSignInContext.get_Identity()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.IdentitySetClaimsIdentity">
+            <summary>Sets the shim of CookieResponseSignInContext.set_Identity(ClaimsIdentity value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.PropertiesGet">
+            <summary>Sets the shim of CookieResponseSignInContext.get_Properties()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.PropertiesSetAuthenticationProperties">
+            <summary>Sets the shim of CookieResponseSignInContext.set_Properties(AuthenticationProperties value)</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.AllInstances.AuthenticationTypeGet">
+            <summary>Sets the shim of CookieResponseSignInContext.get_AuthenticationType()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.AllInstances.AuthenticationTypeSetString">
+            <summary>Sets the shim of CookieResponseSignInContext.set_AuthenticationType(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.AllInstances.IdentityGet">
+            <summary>Sets the shim of CookieResponseSignInContext.get_Identity()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.AllInstances.IdentitySetClaimsIdentity">
+            <summary>Sets the shim of CookieResponseSignInContext.set_Identity(ClaimsIdentity value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.AllInstances.PropertiesGet">
+            <summary>Sets the shim of CookieResponseSignInContext.get_Properties()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieResponseSignInContext.AllInstances.PropertiesSetAuthenticationProperties">
+            <summary>Sets the shim of CookieResponseSignInContext.set_Properties(AuthenticationProperties value)</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext">
+            <summary>Shim type of Microsoft.Owin.Security.Cookies.CookieValidateIdentityContext</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.#ctor(Microsoft.Owin.Security.Cookies.CookieValidateIdentityContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.ConstructorAuthenticationTicket">
+            <summary>Sets the shim of CookieValidateIdentityContext.CookieValidateIdentityContext(AuthenticationTicket ticket)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.ConstructorIOwinContextAuthenticationTicketCookieAuthenticationOptions">
+            <summary>Sets the shim of CookieValidateIdentityContext.CookieValidateIdentityContext(IOwinContext context, AuthenticationTicket ticket, CookieAuthenticationOptions options)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.IdentityGet">
+            <summary>Sets the shim of CookieValidateIdentityContext.get_Identity()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.IdentitySetClaimsIdentity">
+            <summary>Sets the shim of CookieValidateIdentityContext.set_Identity(ClaimsIdentity value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.PropertiesGet">
+            <summary>Sets the shim of CookieValidateIdentityContext.get_Properties()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.PropertiesSetAuthenticationProperties">
+            <summary>Sets the shim of CookieValidateIdentityContext.set_Properties(AuthenticationProperties value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.RejectIdentity">
+            <summary>Sets the shim of CookieValidateIdentityContext.RejectIdentity()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.ReplaceIdentityIIdentity">
+            <summary>Sets the shim of CookieValidateIdentityContext.ReplaceIdentity(IIdentity identity)</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.AllInstances.IdentityGet">
+            <summary>Sets the shim of CookieValidateIdentityContext.get_Identity()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.AllInstances.IdentitySetClaimsIdentity">
+            <summary>Sets the shim of CookieValidateIdentityContext.set_Identity(ClaimsIdentity value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.AllInstances.PropertiesGet">
+            <summary>Sets the shim of CookieValidateIdentityContext.get_Properties()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.AllInstances.PropertiesSetAuthenticationProperties">
+            <summary>Sets the shim of CookieValidateIdentityContext.set_Properties(AuthenticationProperties value)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.AllInstances.RejectIdentity">
+            <summary>Sets the shim of CookieValidateIdentityContext.RejectIdentity()</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.ShimCookieValidateIdentityContext.AllInstances.ReplaceIdentityIIdentity">
+            <summary>Sets the shim of CookieValidateIdentityContext.ReplaceIdentity(IIdentity identity)</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.StubCookieApplyRedirectContext">
+            <summary>Stub type of Microsoft.Owin.Security.Cookies.CookieApplyRedirectContext</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieApplyRedirectContext.#ctor(Microsoft.Owin.IOwinContext,Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieApplyRedirectContext.InitializeStub">
+            <summary>Initializes a new instance of type StubCookieApplyRedirectContext</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieApplyRedirectContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieApplyRedirectContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieApplyRedirectContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationOptions">
+            <summary>Stub type of Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationOptions.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationOptions.InitializeStub">
+            <summary>Initializes a new instance of type StubCookieAuthenticationOptions</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationOptions.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationOptions.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationOptions.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationProvider">
+            <summary>Stub type of Microsoft.Owin.Security.Cookies.CookieAuthenticationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubCookieAuthenticationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationProvider.ResponseSignIn(Microsoft.Owin.Security.Cookies.CookieResponseSignInContext)">
+            <summary>Sets the stub of CookieAuthenticationProvider.ResponseSignIn(CookieResponseSignInContext context)</summary>
+        </member>
+        <member name="F:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationProvider.ResponseSignInCookieResponseSignInContext">
+            <summary>Sets the stub of CookieAuthenticationProvider.ResponseSignIn(CookieResponseSignInContext context)</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationProvider.ValidateIdentity(Microsoft.Owin.Security.Cookies.CookieValidateIdentityContext)">
+            <summary>Sets the stub of CookieAuthenticationProvider.ValidateIdentity(CookieValidateIdentityContext context)</summary>
+        </member>
+        <member name="F:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationProvider.ValidateIdentityCookieValidateIdentityContext">
+            <summary>Sets the stub of CookieAuthenticationProvider.ValidateIdentity(CookieValidateIdentityContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieAuthenticationProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.StubCookieResponseSignInContext">
+            <summary>Stub type of Microsoft.Owin.Security.Cookies.CookieResponseSignInContext</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieResponseSignInContext.#ctor(Microsoft.Owin.IOwinContext,Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions,System.String,System.Security.Claims.ClaimsIdentity,Microsoft.Owin.Security.AuthenticationProperties)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieResponseSignInContext.#ctor(Microsoft.Owin.IOwinRequest,Microsoft.Owin.IOwinResponse,System.String,System.Security.Claims.ClaimsIdentity,Microsoft.Owin.Security.AuthenticationProperties)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieResponseSignInContext.InitializeStub">
+            <summary>Initializes a new instance of type StubCookieResponseSignInContext</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieResponseSignInContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieResponseSignInContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieResponseSignInContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.StubCookieValidateIdentityContext">
+            <summary>Stub type of Microsoft.Owin.Security.Cookies.CookieValidateIdentityContext</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieValidateIdentityContext.#ctor(Microsoft.Owin.Security.AuthenticationTicket)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieValidateIdentityContext.#ctor(Microsoft.Owin.IOwinContext,Microsoft.Owin.Security.AuthenticationTicket,Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubCookieValidateIdentityContext.InitializeStub">
+            <summary>Initializes a new instance of type StubCookieValidateIdentityContext</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieValidateIdentityContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieValidateIdentityContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Owin.Security.Cookies.Fakes.StubCookieValidateIdentityContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Owin.Security.Cookies.Fakes.StubICookieAuthenticationProvider">
+            <summary>Stub type of Microsoft.Owin.Security.Cookies.ICookieAuthenticationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubICookieAuthenticationProvider.#ctor">
+            <summary>Initializes a new instance of type StubICookieAuthenticationProvider</summary>
+        </member>
+        <member name="F:Microsoft.Owin.Security.Cookies.Fakes.StubICookieAuthenticationProvider.ApplyRedirectCookieApplyRedirectContext">
+            <summary>Sets the stub of ICookieAuthenticationProvider.ApplyRedirect(CookieApplyRedirectContext context)</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubICookieAuthenticationProvider.mosc::Microsoft#Owin#Security#Cookies#ICookieAuthenticationProvider#ApplyRedirect(Microsoft.Owin.Security.Cookies.CookieApplyRedirectContext)">
+            <summary>Sets the stub of ICookieAuthenticationProvider.ApplyRedirect(CookieApplyRedirectContext context)</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubICookieAuthenticationProvider.mosc::Microsoft#Owin#Security#Cookies#ICookieAuthenticationProvider#ResponseSignIn(Microsoft.Owin.Security.Cookies.CookieResponseSignInContext)">
+            <summary>Sets the stub of ICookieAuthenticationProvider.ResponseSignIn(CookieResponseSignInContext context)</summary>
+        </member>
+        <member name="M:Microsoft.Owin.Security.Cookies.Fakes.StubICookieAuthenticationProvider.mosc::Microsoft#Owin#Security#Cookies#ICookieAuthenticationProvider#ValidateIdentity(Microsoft.Owin.Security.Cookies.CookieValidateIdentityContext)">
+            <summary>Sets the stub of ICookieAuthenticationProvider.ValidateIdentity(CookieValidateIdentityContext context)</summary>
+        </member>
+        <member name="F:Microsoft.Owin.Security.Cookies.Fakes.StubICookieAuthenticationProvider.ResponseSignInCookieResponseSignInContext">
+            <summary>Sets the stub of ICookieAuthenticationProvider.ResponseSignIn(CookieResponseSignInContext context)</summary>
+        </member>
+        <member name="F:Microsoft.Owin.Security.Cookies.Fakes.StubICookieAuthenticationProvider.ValidateIdentityCookieValidateIdentityContext">
+            <summary>Sets the stub of ICookieAuthenticationProvider.ValidateIdentity(CookieValidateIdentityContext context)</summary>
+        </member>
+        <member name="T:Owin.Fakes.ShimCookieAuthenticationExtensions">
+            <summary>Shim type of Owin.CookieAuthenticationExtensions</summary>
+        </member>
+        <member name="M:Owin.Fakes.ShimCookieAuthenticationExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Owin.Fakes.ShimCookieAuthenticationExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Owin.Fakes.ShimCookieAuthenticationExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Owin.Fakes.ShimCookieAuthenticationExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Owin.Fakes.ShimCookieAuthenticationExtensions.UseCookieAuthenticationIAppBuilderCookieAuthenticationOptions">
+            <summary>Sets the shim of CookieAuthenticationExtensions.UseCookieAuthentication(IAppBuilder app, CookieAuthenticationOptions options)</summary>
+        </member>
+    </members>
+</doc>
