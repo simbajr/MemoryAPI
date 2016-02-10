@@ -24,6 +24,7 @@ namespace MemoryAPI.Controllers.v1
         }
 
         //POST api/account/Register
+        [HttpPost]
         [AllowAnonymous]
         public async Task<IHttpActionResult> Register(Account account)
         {
