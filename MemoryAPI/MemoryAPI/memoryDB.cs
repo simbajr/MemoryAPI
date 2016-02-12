@@ -27,7 +27,7 @@ namespace MemoryAPI
         }
 
         public MemoryDB()
-            : base("memoryDB")
+            : base("memdb2") // namnetet på connectionstringen som ansluter till databasen i AWS
         {
 
         }

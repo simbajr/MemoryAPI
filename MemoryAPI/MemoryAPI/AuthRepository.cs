@@ -36,6 +36,8 @@ namespace MemoryAPI
                 List<Media> mediaList = new List<Media>();
                 List<User> friendList = new List<User>();
                 newUser.friendList = friendList;
+                newUser.username = userModel.username;
+                newUser.email = userModel.email;                
                 newUser.mediaList = mediaList;
 
                 db.User.Add(newUser);
