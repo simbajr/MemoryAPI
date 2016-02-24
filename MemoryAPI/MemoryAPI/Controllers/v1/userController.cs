@@ -54,10 +54,10 @@ namespace MemoryAPI.Controllers.v1
         // POST: Create new media file. In body must be either "sound-file", "video-file" or "picture-file".
         public IHttpActionResult Post(String username, String modifier)
         {
-            string bucketName = "";
+            string bucketName = "memorybucket";
             string awsAccessKeyId = "";
             string awsSecretAccessKey = "";
-            string URLforFile = "http://blabla";
+            string URLforFile = "http://memoryapichalleballesimba-dev.elasticbeanstalk.com/";
             var DB = new MemoryDB();
             User userObj = DB.User.FirstOrDefault(x => x.username == username);
 
