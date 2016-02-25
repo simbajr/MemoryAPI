@@ -62,10 +62,12 @@ namespace MemoryAPI.Controllers.v1
             string URLforFile = "http://memoryapi-dev.elasticbeanstalk.com/";
             var DB = new MemoryDB();
             User userObj = DB.User.FirstOrDefault(x => x.username == username);
+            
 
             if(modifier.Equals("pictures"))
             {
                 var uploadFile = HttpContext.Current.Request.Files["picture-file"];
+                
                 if ((uploadFile != null) && (uploadFile.ContentLength > 0))
                 {
                     byte[] dataArr = new byte[uploadFile.ContentLength];
