@@ -52,12 +52,14 @@ namespace MemoryAPI.Controllers.v1
 
         // /api/v1/user/<username>/<modifier> (sounds, videos, pictures)
         // POST: Create new media file. In body must be either "sound-file", "video-file" or "picture-file".
-        public IHttpActionResult Post(String username, String modifier)
+        public IHttpActionResult Post(String id, String modifier,[FromBody]String id2)
         {
+            string username = id;
+            string friendsname = id2;
             string bucketName = "memorybucket";
             string awsAccessKeyId = "";
             string awsSecretAccessKey = "";
-            string URLforFile = "http://memoryapichalleballesimba-dev.elasticbeanstalk.com/";
+            string URLforFile = "http://memoryapi-dev.elasticbeanstalk.com/";
             var DB = new MemoryDB();
             User userObj = DB.User.FirstOrDefault(x => x.username == username);
 
@@ -228,6 +230,39 @@ namespace MemoryAPI.Controllers.v1
                         }
                     }
                 }
+                if (modifier.Equals("friends"))
+                {
+                    using (var db = new MemoryDB())
+                    {
+                        var dbUser = (from us in db.User.Include("friendList") where us.username == username select us).SingleOrDefault();
+                        var dbFriend = (from us in db.User where us.username == friendsname select us).SingleOrDefault();
+
+                        if ((dbUser != null) && (dbFriend != null))
+                        {
+                            try
+                            {
+                                dbUser.friendList.Add(dbFriend);
+                                db.SaveChanges();
+                                return Ok("Friend was successfully added.");
+                            }
+                            catch (Exception e)
+                            {
+                                var responseErrorMsg = new HttpResponseMessage { Content = new StringContent(string.Format("This is wrong: {0}", e)) };
+                                throw new HttpResponseException(responseErrorMsg);
+                            }
+                        }
+                        else
+                        {
+                            var responseMsg = new HttpResponseMessage { Content = new StringContent("User not found or friend not found.") };
+                            throw new HttpResponseException(responseMsg);
+                        }
+                    }
+                }
+                else
+                {
+                    var responseMsg = new HttpResponseMessage { Content = new StringContent("You did not use the correct modifier.") };
+                    throw new HttpResponseException(responseMsg);
+                }
             }
 
             var lastErrorMsg = new HttpResponseMessage { Content = new StringContent(string.Format("The modifier was wrong, please state the correct one!")) };
@@ -241,7 +276,7 @@ namespace MemoryAPI.Controllers.v1
         {
             using (var db = new MemoryDB())
             {
-                var dbUser = (from us in db.User where us.username == username select us).SingleOrDefault();
+                var dbUser = (from us in db.User where us.username == username select us).FirstOrDefault();
                 if (dbUser == null)
                 {
                     var responseMsg = new HttpResponseMessage { Content = new StringContent("There was no user found.") };
@@ -259,7 +294,7 @@ namespace MemoryAPI.Controllers.v1
         {
             using (var db = new MemoryDB())
             {
-                var dbUser = (from us in db.User.Include("mediaList") where us.username == username select us).SingleOrDefault();
+                var dbUser = (from us in db.User.Include("mediaList") where us.username == username select us).FirstOrDefault();
                 if (dbUser != null)
                 {
                     try
@@ -291,8 +326,10 @@ namespace MemoryAPI.Controllers.v1
         // /api/v1/user/<username>/<modifier> (friends, media, media-object)
         // GET (friends): Returns a list of friends the user with username <username> has.
         // GET (media): Returns a list of media the user with username <username> has.
-        public object Get(String username, String modifier)
+        public object Get(String id, String modifier)
         {
+            string username = id;
+
             if (modifier.Equals("friends"))
             {
                 using (var db = new MemoryDB())
@@ -333,42 +370,45 @@ namespace MemoryAPI.Controllers.v1
         }
 
         // POST: Adds a user as a friend to the user with username <username>.
-        public IHttpActionResult Post(String username, String modifier, [FromBody]String friendsname)
-        {
-            if (modifier.Equals("friends"))
-            {
-                using (var db = new MemoryDB())
-                {
-                    var dbUser = (from us in db.User.Include("friendList") where us.username == username select us).SingleOrDefault();
-                    var dbFriend = (from us in db.User where us.username == friendsname select us).SingleOrDefault();
+        //public IHttpActionResult Post(String id, String modifier, [FromBody]String friendsname)
+        //{
+            
+        //    string username = id;
 
-                    if ((dbUser == null) && (dbFriend == null))
-                    {
-                        try
-                        {
-                            dbUser.friendList.Add(dbFriend);
-                            db.SaveChanges();
-                            return Ok("Friend was successfully added.");
-                        }
-                        catch (Exception e)
-                        {  
-                            var responseErrorMsg = new HttpResponseMessage { Content = new StringContent(string.Format("This is wrong: {0}", e)) };
-                            throw new HttpResponseException(responseErrorMsg);
-                        }
-                    }
-                    else
-                    {
-                        var responseMsg = new HttpResponseMessage { Content = new StringContent("User not found or friend not found.") };
-                        throw new HttpResponseException(responseMsg);
-                    }
-                }
-            }
-            else
-            {
-                var responseMsg = new HttpResponseMessage { Content = new StringContent("You did not use the correct modifier.") };
-                throw new HttpResponseException(responseMsg);
-            }
-        }
+        //    if (modifier.Equals("friends"))
+        //    {
+        //        using (var db = new MemoryDB())
+        //        {
+        //            var dbUser = (from us in db.User.Include("friendList") where us.username == username select us).SingleOrDefault();
+        //            var dbFriend = (from us in db.User where us.username == friendsname select us).SingleOrDefault();
+
+        //            if ((dbUser != null) && (dbFriend != null))
+        //            {
+        //                try
+        //                {
+        //                    dbUser.friendList.Add(dbFriend);
+        //                    db.SaveChanges();
+        //                    return Ok("Friend was successfully added.");
+        //                }
+        //                catch (Exception e)
+        //                {  
+        //                    var responseErrorMsg = new HttpResponseMessage { Content = new StringContent(string.Format("This is wrong: {0}", e)) };
+        //                    throw new HttpResponseException(responseErrorMsg);
+        //                }
+        //            }
+        //            else
+        //            {
+        //                var responseMsg = new HttpResponseMessage { Content = new StringContent("User not found or friend not found.") };
+        //                throw new HttpResponseException(responseMsg);
+        //            }
+        //        }
+        //    }
+        //    else
+        //    {
+        //        var responseMsg = new HttpResponseMessage { Content = new StringContent("You did not use the correct modifier.") };
+        //        throw new HttpResponseException(responseMsg);
+        //    }
+        //}
 
 
         // /api/v1/user/<username>/media
@@ -401,8 +441,10 @@ namespace MemoryAPI.Controllers.v1
 
         // /api/v1/user/<username>/friends/<friendsUsername>
         // DELETE: Removes the user with username <friendsUsername> as a friend to the user with username <username>.
-        public IHttpActionResult Delete(String username, String modifier, String friendsUsername)
+        public IHttpActionResult Delete(String id, String modifier, String id2)
         {
+            string username = id;
+            string friendsUsername = id2;
             if (modifier.Equals("friends"))
             {
                 using (var db = new MemoryDB())

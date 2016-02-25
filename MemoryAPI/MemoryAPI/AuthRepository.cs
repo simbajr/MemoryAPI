@@ -30,21 +30,27 @@ namespace MemoryAPI
                 UserName = userModel.username
             };
 
-            using (var db = new MemoryDB())
-            {
-                User newUser = new User();
-                List<Media> mediaList = new List<Media>();
-                List<User> friendList = new List<User>();
-                newUser.friendList = friendList;
-                newUser.username = userModel.username;
-                newUser.email = userModel.email;                
-                newUser.mediaList = mediaList;
-
-                db.User.Add(newUser);
-                db.SaveChanges();
-            }
-
             var result = await _userManager.CreateAsync(user, userModel.password);
+
+            if (result.Succeeded)
+            {
+
+                using (var db = new MemoryDB())
+                {
+                    User newUser = new User();
+                    List<Media> mediaList = new List<Media>();
+                    List<User> friendList = new List<User>();
+                    newUser.friendList = friendList;
+                    newUser.username = userModel.username;
+                    newUser.email = userModel.email;
+                    newUser.mediaList = mediaList;
+
+
+                    db.User.Add(newUser);
+                    db.SaveChanges();
+                }
+
+            }
 
             return result;
         }
